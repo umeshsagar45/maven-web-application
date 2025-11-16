@@ -84,12 +84,7 @@
 		
 		<!-- provided dependencies -->
 
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
-			<scope>provided</scope>
-		</dependency>
+		
 		
 	</dependencies>
 	
@@ -151,6 +146,12 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>24.0.0</version>
+			</plugin>
+			
 			
 </plugins>
 	</build>
